@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. 
+        Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" 
+        e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente,
+         caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados. */
+
+         let aprovados = 0;
+         let resposta = "S";
+
+         while(resposta.toUpperCase() === "S") {
+            let nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "));
+            let nota2 = parseFloat(prompt("Digite a segunda nota do aluno "));
+
+            let media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5){
+                aprovados ++;
+                alert(` Aprovado! Média final : ${media.toFixed(1)}`);
+            }   else{
+                alert(`Reprovado! Media final:  ${media.toFixed(1)}`);
+            }
+
+            resposta = prompt("calcular a media de outro aluno? (S/N)");
+         }
+         alert(`Total de alunos aprovados : ${aprovados}`);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

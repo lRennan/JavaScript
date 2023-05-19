@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e 
+        todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.*/
+
+        let num1 = prompt("Informe o primeiro número inteiro: ");
+        let num2 = prompt("Informe o segundo número inteiro: ");
+
+        let soma = 0;
+        let contador = 0;
+
+        // verificar se num1 é menor que num2
+        if (num1 < num2) {
+        // percorrer todos os números inteiros entre num1 e num2,inclusive
+        for (let i = num1; i <= num2; i++) {
+            soma += i;
+            contador ++;
+        }
+
+        } else {
+        alert("O primeiro número deve ser menor que o segundo");
+        }
+
+        let media = soma / contador;
+        alert(`A media aritmética dos números inteiros entre  ${num1} e  ${num2} é ${ media }`);
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
